@@ -2,10 +2,9 @@ const SlackBot = require('slackbots')
 const axios = require('axios')
 
 const bot = new SlackBot({
-	token: 'xoxb-518779524167-517623770179-PA9NgWWLKWKMEj0enmwc6ARt',
+	token: process.env.API_TOKEN,
 	name: 'nodebot'
 })
-
 
 bot.on('start', () => {
 	const params = { icon_emoji: ':cat:' }
