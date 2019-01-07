@@ -1,10 +1,8 @@
 const SlackBot = require('slackbots')
 const axios = require('axios')
 
-//
-//'xoxp-518779524167-518779524471-518856382167-29eb431b3867b5dfc8c1c7d6ab99ac59'
 const bot = new SlackBot({
-	token: process.env.API_TOKEN || 'xoxb-518779524167-517623770179-DpVTgGpZDFoKe2HtrCQ1PMWy',
+	token: process.env.API_TOKEN,
 	name: 'nodebot'
 })
 
